@@ -28,3 +28,29 @@ services:
       - DB_HOST=customerdb
       - DB_NAME=dms_customer
       - DB_SA_PASSWORD=pa55w0rd!
+
+  productdb:
+    container_name: product-db
+    image: mysql:8.0.34-oracle
+    environment:
+     - MYSQL_ROOT_PASSWORD=admin
+    ports:
+     - 8003:3306
+    networks:
+     - backend
+
+  productservice:
+    container_name: product-service
+    image: ${DOCKER_REGISTRY-}productservice
+    build:
+      context: .
+      dockerfile: ProductService/Dockerfile
+    networks:
+      - backend
+    ports:
+     - 8004:80
+    environment:
+      - DB_HOST=productdb
+      - DB_NAME=dms_product
+      - DB_ROOT_PASSWORD=admin
+

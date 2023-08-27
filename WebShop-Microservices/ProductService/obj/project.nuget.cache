@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6z75nc0us/TQ7iGmWNGfE6rewlTXps2Q1tZVT0Y3+UtN/h8c7omh0A2siQ8nYyCh+S4Lj1qcRnve8hvX0YwyAQ==",
+  "dgSpecHash": "nokJkAtG7CLfRz4Bj/j5+EA7TdcPP2r9Z0XFIjPuOR1jEXNSTQ4UWVSV9SlPpuQDDQ77nItRL6wRIb2xvZv/VA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Teodora\\Documents\\GitHub\\WebShop-Microservices\\WebShop-Microservices\\ProductService\\ProductService.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\Teodora\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\Teodora\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Teodora\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Teodora\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512",
     "C:\\Users\\Teodora\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Teodora\\.nuget\\packages\\mysql.data\\8.1.0\\mysql.data.8.1.0.nupkg.sha512",
     "C:\\Users\\Teodora\\.nuget\\packages\\mysql.entityframeworkcore\\7.0.5\\mysql.entityframeworkcore.7.0.5.nupkg.sha512",
