@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "G/8JAlOz0/5Ik1l7Pv44R1DJY8B4qbC1QU1KqNJ6P1IaoYZAHasxEq7hD08Uauezc9wVU5KER52ZDcoh+481KQ==",
+  "dgSpecHash": "dxWrHNWNfgFDTrd4myEaJo+L1nIsrBFr+1OHVIlHLkb3FMAwpxhagIKUt4RlYhcRmX767dbSN+sWtgFly45nFw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Teodora\\Documents\\GitHub\\WebShop-Microservices\\WebShop-Microservices\\ApiGateway\\ApiGateway.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\Teodora\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Teodora\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Teodora\\.nuget\\packages\\microsoft.extensions.diagnosticadapter\\3.1.22\\microsoft.extensions.diagnosticadapter.3.1.22.nupkg.sha512",
+    "C:\\Users\\Teodora\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512",
     "C:\\Users\\Teodora\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Teodora\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\Teodora\\.nuget\\packages\\ocelot\\18.0.0\\ocelot.18.0.0.nupkg.sha512",

@@ -57,3 +57,17 @@ C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bi
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\AWSSDK.Core.dll
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\Snappier.dll
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\OrderService.pdb
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\ApiGateway.deps.json
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\ApiGateway.runtimeconfig.json
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\ocelot.json
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\ApiGateway.exe
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\ApiGateway.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\Ocelot.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\FluentValidation.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\Newtonsoft.Json.Bson.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\ApiGateway.pdb
