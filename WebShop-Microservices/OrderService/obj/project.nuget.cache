@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JdCw/IeOdiwvevhqZ3Fs3Mm/l3gyM7ZizK41l4wIKEH38EAaB0jup0dSrzCiXHmaKqCk1dzvUAlie/U/Z7eALg==",
+  "dgSpecHash": "SzPtkEAzy9KjxzfbsfMfvM6XHofeM0y63T6KOrglkNAGmJ38SPYfeSHedcriIjjF0mZPLApWjBMGqUBCF+QwTw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Teodora\\Documents\\GitHub\\WebShop-Microservices\\WebShop-Microservices\\OrderService\\OrderService.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Teodora\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\Teodora\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\Teodora\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Teodora\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512",
     "C:\\Users\\Teodora\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Teodora\\.nuget\\packages\\mongodb.bson\\2.21.0\\mongodb.bson.2.21.0.nupkg.sha512",
     "C:\\Users\\Teodora\\.nuget\\packages\\mongodb.driver\\2.21.0\\mongodb.driver.2.21.0.nupkg.sha512",

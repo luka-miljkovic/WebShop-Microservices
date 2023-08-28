@@ -54,3 +54,24 @@ services:
       - DB_NAME=dms_product
       - DB_ROOT_PASSWORD=admin
 
+  orderdb:
+    container_name: order-db
+    image: mongo
+    ports:
+      - 8005:27017
+    networks:
+      - backend
+
+  orderservice:
+    container_name: order-service
+    image: ${DOCKER_REGISTRY-}orderservice
+    build:
+      context: .
+      dockerfile: OrderService/Dockerfile
+    networks:
+      - backend
+    ports:
+      - 8006:80
+    environment:
+      - DB_HOST=orderdb
+      - DB_NAME=dms_order

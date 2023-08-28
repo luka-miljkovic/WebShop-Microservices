@@ -13,8 +13,10 @@ namespace OrderService.Controllers
 
         public OrderController()
         {
-            var dbHost = "localhost";
-            var dbName = "dms_orders";
+            var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
+            var dbName = Environment.GetEnvironmentVariable("DB_NAME");
+            //var dbHost = "localhost";
+            //var dbName = "dms_orders";
             var connectionString = $"mongodb://{dbHost}:27017/{dbName}";
 
             var mongoUrl = MongoUrl.Create(connectionString);

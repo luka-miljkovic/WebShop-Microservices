@@ -44,3 +44,16 @@ C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bi
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\System.Windows.Extensions.dll
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\ProductService.pdb
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\OrderService.deps.json
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\OrderService.runtimeconfig.json
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\OrderService.exe
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\OrderService.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\MongoDB.Bson.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\MongoDB.Driver.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\MongoDB.Libmongocrypt.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\DnsClient.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\SharpCompress.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\AWSSDK.Core.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\Snappier.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\OrderService.pdb
