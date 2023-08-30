@@ -79,3 +79,8 @@ C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bi
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\RabbitMQ.Client.dll
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\System.Threading.Channels.dll
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\DeliveryService.pdb
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\EmployeeService.deps.json
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\EmployeeService.runtimeconfig.json
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\EmployeeService.exe
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\EmployeeService.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\EmployeeService.pdb

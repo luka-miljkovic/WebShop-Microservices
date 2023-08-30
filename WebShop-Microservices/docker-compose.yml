@@ -121,3 +121,26 @@ services:
       - 5672:5672
     networks:
       - backend 
+
+  employeedb:
+    container_name: employee-db
+    image: mysql:8.0.34-oracle
+    environment:
+     - MYSQL_ROOT_PASSWORD=admin
+    ports:
+     - 8009:3306
+    networks:
+     - backend
+
+  employeeservice:
+    container_name: employee-service
+    image: ${DOCKER_REGISTRY-}employeeservice
+    build:
+      context: .
+      dockerfile: EmployeeService/Dockerfile
+    networks:
+      - backend
+    environment:
+      - DB_HOST=employeedb
+      - DB_NAME=dms_employee
+      - DB_ROOT_PASSWORD=admin 
