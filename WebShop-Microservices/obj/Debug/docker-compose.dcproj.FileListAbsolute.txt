@@ -71,3 +71,11 @@ C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bi
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\Newtonsoft.Json.Bson.dll
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\ApiGateway.pdb
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\appsettings.Production.json
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\DeliveryService.deps.json
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\DeliveryService.runtimeconfig.json
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\DeliveryService.exe
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\DeliveryService.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\RabbitMQ.Client.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\System.Threading.Channels.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\DeliveryService.pdb

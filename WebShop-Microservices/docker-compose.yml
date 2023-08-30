@@ -3,6 +3,8 @@ version: '3.4'
 networks:
   backend:
 
+
+
 services:
   customerdb:
     container_name: customer-db
@@ -64,6 +66,8 @@ services:
     build:
       context: .
       dockerfile: OrderService/Dockerfile
+    depends_on:
+      - rabbitmq
     networks:
       - backend
     environment:
@@ -80,3 +84,40 @@ services:
       - 8007:80
     networks:
       - backend
+  
+  
+   
+  deliverydb:
+    container_name: delivery-db
+    image: mysql:8.0.34-oracle
+    environment:
+     - MYSQL_ROOT_PASSWORD=admin
+    ports:
+     - 8145:3306
+    networks:
+     - backend
+
+  deliveryservice:
+    container_name: delivery-service
+    image: ${DOCKER_REGISTRY-}deliveryservice
+    build:
+      context: .
+      dockerfile: DeliveryService/Dockerfile
+    networks:
+      - backend
+    environment:
+      - DB_HOST=deliverydb
+      - DB_NAME=dms_delivery
+      - DB_ROOT_PASSWORD=admin
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: "rabbitmq"
+    hostname: "rabbitmq"
+    labels:
+      NAME: "rabbitmq"
+    ports:
+      - 15672:15672
+      - 5672:5672
+    networks:
+      - backend 

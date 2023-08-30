@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
+using OrderService.AsyncDataServices;
+using OrderService.DTOs;
 using OrderService.Models;
 
 namespace OrderService.Controllers
@@ -10,9 +12,12 @@ namespace OrderService.Controllers
     public class OrderController : ControllerBase
     {
         private readonly IMongoCollection<Order> _orderCollection;
+        private readonly IMessageBusClient _messageBusClient;
 
-        public OrderController()
+        public OrderController(IMessageBusClient messageBusClient)
         {
+            _messageBusClient = messageBusClient;
+
             var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
             var dbName = Environment.GetEnvironmentVariable("DB_NAME");
             //var dbHost = "localhost";
@@ -42,6 +47,17 @@ namespace OrderService.Controllers
         public async Task<ActionResult> Create(Order order)
         {
             await _orderCollection.InsertOneAsync(order);
+
+            //send async message
+            try
+            {
+                _messageBusClient.PublishNewOrder(new OrderPublishedDto { OrderId = order.OrderId});
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Could not sent synchronously: {ex.Message}");
+            }
+
             return Ok();
         }
 

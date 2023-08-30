@@ -1,0 +1,150 @@
+name: dockercompose3480748212475598791
+services:
+  apigateway:
+    build:
+      context: C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices
+      dockerfile: ApiGateway/Dockerfile
+    container_name: api-gateway
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: apigateway
+    networks:
+      backend: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+    - mode: ingress
+      target: 80
+      published: "8007"
+      protocol: tcp
+  customerdb:
+    container_name: customer-db
+    environment:
+      ACCEPT_EULA: "Y"
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      backend: null
+    ports:
+    - mode: ingress
+      target: 1433
+      published: "8001"
+      protocol: tcp
+  customerservice:
+    build:
+      context: C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices
+      dockerfile: CustomerService/Dockerfile
+    container_name: customer-api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DB_HOST: customerdb
+      DB_NAME: dms_customer
+      DB_SA_PASSWORD: pa55w0rd!
+    image: customerservice
+    networks:
+      backend: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+  deliverydb:
+    container_name: delivery-db
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+    image: mysql:8.0.34-oracle
+    networks:
+      backend: null
+    ports:
+    - mode: ingress
+      target: 3306
+      published: "8145"
+      protocol: tcp
+  deliveryservice:
+    build:
+      context: C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices
+      dockerfile: DeliveryService/Dockerfile
+    container_name: delivery-service
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DB_HOST: deliverydb
+      DB_NAME: dms_delivery
+      DB_ROOT_PASSWORD: admin
+    image: deliveryservice
+    networks:
+      backend: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+  orderdb:
+    container_name: order-db
+    image: mongo
+    networks:
+      backend: null
+    ports:
+    - mode: ingress
+      target: 27017
+      published: "8005"
+      protocol: tcp
+  orderservice:
+    build:
+      context: C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices
+      dockerfile: OrderService/Dockerfile
+    container_name: order-service
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DB_HOST: orderdb
+      DB_NAME: dms_order
+    image: orderservice
+    networks:
+      backend: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+  productdb:
+    container_name: product-db
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+    image: mysql:8.0.34-oracle
+    networks:
+      backend: null
+    ports:
+    - mode: ingress
+      target: 3306
+      published: "8003"
+      protocol: tcp
+  productservice:
+    build:
+      context: C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices
+      dockerfile: ProductService/Dockerfile
+    container_name: product-service
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DB_HOST: productdb
+      DB_NAME: dms_product
+      DB_ROOT_PASSWORD: admin
+    image: productservice
+    networks:
+      backend: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management
+    networks:
+      backend: null
+    ports:
+    - mode: ingress
+      target: 15672
+      published: "15672"
+      protocol: tcp
+    - mode: ingress
+      target: 5672
+      published: "5672"
+      protocol: tcp
+networks:
+  backend:
+    name: dockercompose3480748212475598791_backend
