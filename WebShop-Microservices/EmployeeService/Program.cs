@@ -1,4 +1,6 @@
 using EmployeeService;
+using EmployeeService.SyncDataServices.Grpc;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,13 +20,36 @@ var connectionString = $"server={dbHost};port=3306;database={dbName};user=root;p
 builder.Services.AddDbContext<EmployeeDbContext>(o => o.UseMySQL(connectionString));
 /* ===================================== */
 
+//adding grpc service
+builder.Services.AddGrpc();
+
+//builder.WebHost.ConfigureKestrel(options =>
+//{
+//    // Setup a HTTP/2 endpoint without TLS.
+//    options.ListenLocalhost(5076, o => o.Protocols =
+//        HttpProtocols.Http2);
+//});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 
+app.UseRouting();
+
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+    endpoints.MapGrpcService<GrpcEmployeeService>();
+
+    endpoints.MapGet("/protos/employees.proto", async context =>
+    {
+        await context.Response.WriteAsync(File.ReadAllText("Protos/employees.proto"));
+    });
+});
 
 PrepDb.PrepPopulation(app);
 

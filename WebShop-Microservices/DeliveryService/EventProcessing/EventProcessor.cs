@@ -1,5 +1,6 @@
 ﻿using DeliveryService.Dtos;
 using DeliveryService.Models;
+using DeliveryService.SyncDataService.Grpc;
 using System.Text.Json;
 
 namespace DeliveryService.EventProcessing
@@ -24,6 +25,8 @@ namespace DeliveryService.EventProcessing
             {
                 var repo = scope.ServiceProvider.GetRequiredService<DeliveryDbContext>();
 
+                var grpcService = scope.ServiceProvider.GetRequiredService<IEmployeeDataClient>();
+
                 var orderPublishedDto = JsonSerializer.Deserialize<OrderPublishedDto>(orderPublishedMessage);
 
                 try
@@ -34,6 +37,15 @@ namespace DeliveryService.EventProcessing
                         DeliveryEndTime = DateTime.Now,
                         OrderId = orderPublishedDto.OrderId
                     };
+
+                    var employees = grpcService.ReturnAllEmployees();
+                    foreach (var employee in employees)
+                    {
+                        if (employee.Available)
+                        {
+                            delivery.EmployeeId = employee.EmployeeId;
+                        }
+                    }
 
                     repo.Deliveries.Add(delivery);
                     repo.SaveChanges();

@@ -32,6 +32,7 @@ namespace DeliveryService.AsyncDataService
             //};
 
             var factory = new ConnectionFactory() { HostName = "rabbitmq", Port = 5672 };
+            //var factory = new ConnectionFactory() { HostName = "localhost", Port = 5672 };
             factory.UserName = "guest";
             factory.Password = "guest";
 

@@ -1,6 +1,7 @@
 using DeliveryService;
 using DeliveryService.AsyncDataService;
 using DeliveryService.EventProcessing;
+using DeliveryService.SyncDataService.Grpc;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +21,10 @@ var connectionString = $"server={dbHost};port=3306;database={dbName};user=root;p
 builder.Services.AddDbContext<DeliveryDbContext>(o => o.UseMySQL(connectionString));
 /* ===================================== */
 
+//add service for gRPC
+
+builder.Services.AddScoped<IEmployeeDataClient, EmployeeDataClient>();
+
 builder.Services.AddSingleton<IEventProcessor, EventProcessor>();
 builder.Services.AddHostedService<MessageBusSubscriber>();
 
@@ -27,8 +32,15 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 
+app.UseRouting();
+
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
 
 app.Run();

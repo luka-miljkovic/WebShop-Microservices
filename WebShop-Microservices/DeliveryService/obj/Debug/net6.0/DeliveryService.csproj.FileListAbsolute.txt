@@ -64,3 +64,9 @@ C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\De
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\DeliveryService\obj\Debug\net6.0\DeliveryService.pdb
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\DeliveryService\obj\Debug\net6.0\DeliveryService.genruntimeconfig.cache
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\DeliveryService\obj\Debug\net6.0\ref\DeliveryService.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\DeliveryService\bin\Debug\net6.0\Grpc.AspNetCore.Server.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\DeliveryService\bin\Debug\net6.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\DeliveryService\bin\Debug\net6.0\Grpc.Core.Api.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\DeliveryService\bin\Debug\net6.0\Grpc.Net.Client.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\DeliveryService\bin\Debug\net6.0\Grpc.Net.ClientFactory.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\DeliveryService\bin\Debug\net6.0\Grpc.Net.Common.dll

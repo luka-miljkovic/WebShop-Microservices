@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "EmployeeService.Protos";
+
+service GrpcEmployee {
+	rpc GetAllEmployees (GetAllRequest) returns (EmployeeResponse);
+}
+
+message GetAllRequest {}
+
+message GrpcEmployeeModel{
+	int32 employeeId = 1;
+	string name = 2;
+	bool available = 3;
+}
+
+message EmployeeResponse {
+	repeated GrpcEmployeeModel employee = 1;
+}

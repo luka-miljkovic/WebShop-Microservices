@@ -61,3 +61,10 @@ C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\Em
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\EmployeeService\obj\Debug\net6.0\EmployeeService.pdb
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\EmployeeService\obj\Debug\net6.0\EmployeeService.genruntimeconfig.cache
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\EmployeeService\obj\Debug\net6.0\ref\EmployeeService.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\EmployeeService\bin\Debug\net6.0\Grpc.AspNetCore.Server.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\EmployeeService\bin\Debug\net6.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\EmployeeService\bin\Debug\net6.0\Grpc.Core.Api.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\EmployeeService\bin\Debug\net6.0\Grpc.Net.Client.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\EmployeeService\bin\Debug\net6.0\Grpc.Net.ClientFactory.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\EmployeeService\bin\Debug\net6.0\Grpc.Net.Common.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\EmployeeService\bin\Debug\net6.0\appsettings.Production.json

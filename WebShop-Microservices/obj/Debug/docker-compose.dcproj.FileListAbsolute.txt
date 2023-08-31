@@ -84,3 +84,7 @@ C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bi
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\EmployeeService.exe
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\EmployeeService.dll
 C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\EmployeeService.pdb
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\Grpc.Core.Api.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\Grpc.Net.Client.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\Grpc.AspNetCore.Server.dll
+C:\Users\Teodora\Documents\GitHub\WebShop-Microservices\WebShop-Microservices\bin\Debug\Grpc.Net.Common.dll
